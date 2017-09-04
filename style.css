@@ -1,0 +1,125 @@
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+:root {
+  font-size: calc(1vw + 1vh + 1.5vmin);
+}
+
+body {
+  background-color: #010a00;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  font-size: 1rem;
+}
+
+
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+h2 {
+  
+    background-color: #00000;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: -0;
+    margin-left: 7%;
+   
+}
+
+
+.align {
+ 
+    background-color: #000000;
+    margin: 20px 0;
+    padding: 5px;
+  
+}
+
+.alignright {
+    float: right;
+}
+
+.container-1{
+  width: 300px;
+  margin: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1 input#search{
+  width: 250px;
+  height: 40px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  color: #63717f;
+  padding-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  margin-left: 10%;
+}
+
+ 
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;
+
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.boxContainer {
+   position:absolute; 
+ 
+   margin-left:85%;
+   left:-73%;
+   width:100px;
+   top: 50px
+   bottom:0px;
+}
+
+.box {
+  position:absolute; 
+ 
+   margin-left:100%;
+   left:-73%;
+   width:100px;
+   top: 50px
+   bottom:0px;
+   font-size: 12pt;
+   padding-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}  
+
