@@ -2,31 +2,45 @@
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>What shall we have for AW</title>
-	<link href="./main.css" rel="stylesheet" type="text/css">
+    <title>Where should we go for AW?</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-  <style>
-	.container {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0 auto;
-	}
-  </style>
-	<div class="container">
-		<h1>What shall we have for AW?</h1>
-		<div>
-		  <div>
-			<input placeholder="Something"></input>
-		  </div>
-		  <div>
-			<button>Add</button>
-			<button>Search</button>
-		  </div>
-		</div>
-		
-	</div>
+    <h1>Where should we go for AW?</h1>
+    <div class="inputSection">
+      <div class="inputs">
+        <input placeholder="Something"></input>
+      </div>
+      <button class="addOption">Add</button>
+    </div>
+    <div class="resultSection"></div>
+    <button>Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+
+      var options = []
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+        $('.submit').click(submit)  
+        
+        
+        
+      })
+    </script>
   </body>
 </html>
